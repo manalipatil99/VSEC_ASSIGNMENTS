@@ -103,7 +103,8 @@ function addStudent()
     </tr>
 
     `;
-
+    clearfields();
+}
 
 
     // Clear input fields
@@ -114,5 +115,4 @@ function clearfields()
     document.getElementById("dbms").value = "";
     document.getElementById("cn").value = "";
     document.getElementById("java").value = "";
-}
 }
