@@ -1,0 +1,65 @@
+body
+{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#d24ac2,#7093cf);
+}
+
+.container
+{
+    width:450px;
+    background:white;
+    padding:25px;
+    margin:50px auto;
+    text-align:center;
+    border-radius:15px;
+    gap:20px;
+}
+.container button{
+    background-color: rgb(14, 134, 14);
+    padding:10px;
+    border-radius: 10px;
+    width: 20%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    cursor: pointer;
+    margin:10px;
+    
+    
+}
+button:hover{
+    background-color: yellowgreen;color:black;
+}
+
+input
+{
+    width:90%;
+    padding:10px;
+    margin:8px;
+    font-size:16px;
+}
+
+
+table
+{
+    width:100%;
+    margin-top:20px;
+        border-collapse:collapse;
+
+}
+
+th,td
+{
+    border:1px solid black;
+    padding:10px;
+}
+
+th
+{
+    background-color:#e5adad;
+}
+
+#total
+{
+    color:green;
+}
