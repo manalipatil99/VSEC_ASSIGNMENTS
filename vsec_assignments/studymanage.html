@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Marks Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Student Marks Management System</h1>
+
+    <div class="container">
+
+        <input type="text" id="name" placeholder="Enter Student Name">
+
+        <input type="number" id="math" placeholder="Math Marks">
+
+        <input type="number" id="dbms" placeholder="DBMS Marks">
+
+        <input type="number" id="cn" placeholder="CN Marks">
+
+        <input type="number" id="java" placeholder="Java Marks">
+
+
+        <button onclick="addStudent()">
+            Add Student
+        </button>
+
+<table>
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Math</th>
+            <th>DBMS</th>
+            <th>CN</th>
+            <th>Java</th>
+            <th>Total</th>
+            <th>Percentage</th>
+            <th>Grade</th>
+        </tr>
+    </thead>
+
+    <tbody id="tableBody">
+
+    </tbody>
+
+</table>
+
+    </div>
+
+
+<script src="studymanage.js"></script>
+
+</body>
+
+</html>
