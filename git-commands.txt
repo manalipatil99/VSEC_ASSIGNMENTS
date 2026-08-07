@@ -1,0 +1,116 @@
+GIT COMMANDS PRACTICAL ASSIGNMENT
+
+1. Check Git Version
+Command:
+git --version
+
+Purpose:
+Used to check whether Git is installed and view the installed version.
+
+
+2. Configure Git Username
+Command:
+git config --global user.name "manalipatil99"
+
+Purpose:
+Sets the username for Git commits.
+
+
+3. Configure Git Email
+Command:
+git config --global user.email "manalipatil.95.kbtcoe@gmail.com"
+
+Purpose:
+Sets the email associated with Git commits.
+
+
+4. Check Git Configuration
+Command:
+git config --list
+
+Purpose:
+Displays current Git configuration details.
+
+
+5. Clone Repository
+Command:
+git clone repository_url
+
+Example:
+git clone https://github.com/manalipatil99/VSEC_ASSIGNMENTS.git
+
+Purpose:
+Used to copy a remote GitHub repository to the local system.
+
+
+6. Move Inside Repository Folder
+Command:
+cd VSEC_ASSIGNMENTS
+
+Purpose:
+Used to navigate into the Git repository folder.
+
+
+7. Check Repository Status
+Command:
+git status
+
+Purpose:
+Shows modified, added, and untracked files.
+
+
+8. Initialize Git Repository
+Command:
+git init
+
+Purpose:
+Creates a new local Git repository.
+
+
+9. Add Files to Staging Area
+Command:
+git add .
+
+Purpose:
+Adds all files to the staging area before committing.
+
+
+10. Commit Changes
+Command:
+git commit -m "commit message"
+
+Purpose:
+Saves changes permanently with a message.
+
+
+11. View Commit History
+Command:
+git log
+
+Purpose:
+Displays previous commits.
+
+
+12. Check Remote Repository
+Command:
+git remote -v
+
+Purpose:
+Shows the GitHub repository connected with local repository.
+
+13. Push Changes to GitHub
+Command:
+git push
+
+Purpose:
+Uploads local commits to GitHub.
+
+14. Create New Branch
+Command:
+git branch branch_name
+
+Purpose:
+Creates a new branch.
+
+
+
