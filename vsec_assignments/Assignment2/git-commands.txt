@@ -90,27 +90,40 @@ git log
 Purpose:
 Displays previous commits.
 
-
-12. Check Remote Repository
-Command:
-git remote -v
-
-Purpose:
-Shows the GitHub repository connected with local repository.
-
-13. Push Changes to GitHub
+12. Push Changes to GitHub
 Command:
 git push
 
 Purpose:
 Uploads local commits to GitHub.
 
-14. Create New Branch
+13. Create New Branch
 Command:
 git branch branch_name
 
 Purpose:
 Creates a new branch.
+
+14.To list all branches 
+Command:
+git branch	
+
+Purpose:
+List all branches
+
+16. Switch to Main Branch
+Command:
+git switch main
+
+Purpose:
+Switches to the main branch.
+
+17. To see all branches
+Command:
+git branch -a
+
+
+
 
 
 
