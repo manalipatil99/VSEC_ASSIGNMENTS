@@ -7,7 +7,7 @@
 
 
 body{
-    background:#f4f4f4;
+    background-color: whitesmoke;
 }
 
 
@@ -21,7 +21,7 @@ header{
 
 nav{
     background:#222;
-    padding:15px;
+    padding:25px;
     text-align:center;
 }
 
@@ -29,7 +29,7 @@ nav{
 nav a{
     color:white;
     text-decoration:none;
-    margin:30px;
+    margin:20px;
 }
 
 
@@ -37,7 +37,7 @@ section{
     background:white;
     width:90%;
     margin:20px auto;
-    padding:25px;
+    padding:15px;
     border-radius:10px;
 }
 
@@ -78,7 +78,7 @@ footer{
 
     nav a{
         display:block;
-        margin:10px;
+        margin:20px;
     }
 
 }
