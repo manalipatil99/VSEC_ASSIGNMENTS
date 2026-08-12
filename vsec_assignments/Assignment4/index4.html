@@ -1,37 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Expense Tracker</title>
+    <title>Discount Calculator</title>
     <link rel="stylesheet" href="style4.css">
 </head>
-
 <body>
 
-<div class="container">
+    <div class="container">
+        <h1>Discount Calculator</h1>
 
-    <h1>💰 Expense Tracker</h1>
+        <label>Original Price (₹)</label>
+        <input type="number" id="price" placeholder="Enter original price">
 
-    <input type="text" id="name" placeholder="Expense Name">
-    <input type="number" id="amount" placeholder="Amount">
+        <label>Discount Percentage (%)</label>
+        <input type="number" id="discount" placeholder="Enter discount percentage">
 
-    <button id="addBtn">Add Expense</button>
-    <button id="clearBtn">Clear All</button>
+        <button onclick="calculateDiscount()">Calculate</button>
+        <button onclick="resetFields()" class="reset-btn">Reset</button>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Expense</th>
-                <th>Amount</th>
-            </tr>
-        </thead>
-        <tbody id="expenseTable"></tbody>
-    </table>
+        <div class="result">
+            <h3 id="save">You Save:₹0</h3>
+            <h2 id="finalP`rice">Final Price:₹0</h2>
+        </div>
+    </div>
 
-    <h2 id="total">Total: ₹0</h2>
-
-</div>
-
-<script src="script4.js"></script>
-
+    <script src="script4.js"></script>
 </body>
 </html>

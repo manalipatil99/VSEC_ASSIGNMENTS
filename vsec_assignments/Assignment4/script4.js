@@ -1,49 +1,30 @@
-let total = 0;
+function calculateDiscount(){
 
-let name = document.getElementById("name");
-let amount = document.getElementById("amount");
-let table = document.getElementById("expenseTable");
-let totalText = document.getElementById("total");
+    let price = parseFloat(document.getElementById("price").value);
+    let discount = parseFloat(document.getElementById("discount").value);
 
-function addExpense()
-{
-    let expenseName = name.value;
-    let expenseAmount = Number(amount.value);
-
-    if(expenseName != "" && expenseAmount > 0)
-    {
-        let row = document.createElement("tr");
-
-        row.innerHTML = `
-            <td>${expenseName}</td>
-            <td>₹${expenseAmount}</td>
-        `;
-
-        table.appendChild(row);
-
-        total += expenseAmount;
-        totalText.innerHTML = "Total: ₹" + total;
-
-        name.value = "";
-        amount.value = "";
+    if(isNaN(price) || isNaN(discount)){
+        alert("Please enter both values.");
+        return;
     }
+
+    if(discount < 0 || discount > 100){
+        alert("Discount should be between 0 and 100.");
+        return;
+    }
+
+    let save = (price * discount) / 100;
+    let finalPrice = price - save;
+
+    document.getElementById("save").textContent = "You Save:₹" + save.toFixed(2);
+    document.getElementById("finalPrice").textContent = "Final Price:₹" + finalPrice.toFixed(2);
 }
 
-function clearExpenses()
-{
-    table.innerHTML = "";
-    total = 0;
-    totalText.innerHTML = "Total: ₹0";
+function resetFields(){
+
+    document.getElementById("price").value = "";
+    document.getElementById("discount").value = "";
+
+    document.getElementById("save").textContent = "₹0";
+    document.getElementById("finalPrice").textContent = "₹0";
 }
-
-document.getElementById("addBtn").addEventListener("click", addExpense);
-document.getElementById("clearBtn").addEventListener("click", clearExpenses);
-
-// Keyboard event: Enter key adds expense
-document.addEventListener("keydown", function(event)
-{
-    if(event.key == "Enter")
-    {
-        addExpense();
-    }
-});
