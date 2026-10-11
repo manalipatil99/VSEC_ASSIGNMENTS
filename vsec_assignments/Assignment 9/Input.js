@@ -1,77 +1,65 @@
-import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./App.css";
 
-function Input({ setStudent }) {
+function Input({
+  setName,
+  setCity,
+  setAge,
+  setMobile,
+  setEmail,
+  setCollege
+}) {
   const navigate = useNavigate();
 
-  const [name, setName] = useState("");
-  const [age, setAge] = useState("");
-  const [course, setCourse] = useState("");
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    setStudent({
-      name,
-      age,
-      course,
-      email
-    });
-
-    navigate("/display");
-  };
-
   return (
-    <div className="page">
-      <div className="card">
-        <h1>Student Information</h1>
+    <div>
+      <h2>Enter Student Details</h2>
 
-        <form onSubmit={handleSubmit}>
-          <div className="field">
-            <label>Name</label>
-            <input
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              required
-            />
-          </div>
+      <input
+        type="text"
+        placeholder="Enter Name"
+        onChange={(e) => setName(e.target.value)}
+      />
+      <br /><br />
 
-          <div className="field">
-            <label>Age</label>
-            <input
-              type="number"
-              value={age}
-              onChange={(e) => setAge(e.target.value)}
-              required
-            />
-          </div>
+      <input
+        type="text"
+        placeholder="Enter City"
+        onChange={(e) => setCity(e.target.value)}
+      />
+      <br /><br />
 
-          <div className="field">
-            <label>Course</label>
-            <input
-              type="text"
-              value={course}
-              onChange={(e) => setCourse(e.target.value)}
-              required
-            />
-          </div>
+      <input
+        type="number"
+        placeholder="Enter Age"
+        onChange={(e) => setAge(e.target.value)}
+      />
+      <br /><br />
 
-          <div className="field">
-            <label>Email</label>
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </div>
+      <input
+        type="tel"
+        placeholder="Enter Mobile Number"
+        onChange={(e) => setMobile(e.target.value)}
+      />
+      <br /><br />
 
-          <button type="submit">Submit</button>
-        </form>
-      </div>
+      <input
+        type="email"
+        placeholder="Enter Email Address"
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <br /><br />
+
+      <input
+        type="text"
+        placeholder="Enter College Name"
+        onChange={(e) => setCollege(e.target.value)}
+      />
+      <br /><br />
+
+      <button onClick={() => navigate("/display")}>
+        Next
+      </button>
     </div>
   );
 }
