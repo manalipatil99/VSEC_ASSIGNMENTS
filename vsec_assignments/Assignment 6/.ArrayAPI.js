@@ -7,7 +7,7 @@ app.use(express.json());
 let employees = [
     {
         id: 101,
-        name: "Dipak",
+        name: "Manali",
         age: 21,
         salary: 25000
     },
