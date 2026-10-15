@@ -1,0 +1,178 @@
+/* ===== GLOBAL STYLING ===== */
+
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+padding: 0;
+font-family: "Segoe UI", Arial, sans-serif;
+background: linear-gradient(135deg, #f3e7d9, #e9d5c5, #e8dce8);
+color: #3d2c35;
+min-height: 100vh;
+}
+
+/* ===== LOGIN PAGE ===== */
+.login {
+width: 360px;
+max-width: 92%;
+margin: 90px auto;
+padding: 32px;
+background: linear-gradient(145deg, #fff0df, #f2dfd0);
+border: 1px solid #dfc3b0;
+border-radius: 20px;
+box-shadow: 0 15px 35px rgba(91, 52, 61, 0.15);
+text-align: center;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+width: 90%;
+max-width: 1100px;
+margin: 40px auto;
+padding: 30px;
+background: linear-gradient(145deg, #f6e9dc, #eddfd4);
+border: 1px solid #d8bfb0;
+border-radius: 22px;
+box-shadow: 0 15px 40px rgba(91, 52, 61, 0.12);
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+color: #713b50;
+text-align: center;
+font-size: 32px;
+margin-bottom: 28px;
+letter-spacing: 0.5px;
+}
+
+h2,
+h3 {
+color: #a34e49;
+}
+
+/* ===== FORMS ===== */
+form {
+background: linear-gradient(135deg, #ead5c5, #e8d3d0);
+padding: 25px;
+margin: 22px 0;
+border: 1px solid #d6b8a8;
+border-radius: 16px;
+}
+
+/* ===== INPUT FIELDS ===== */
+input {
+width: calc(100% - 12px);
+padding: 13px;
+margin: 6px;
+background: #f8eade;
+color: #3d2c35;
+border: 1px solid #cba99a;
+border-radius: 9px;
+outline: none;
+font-size: 15px;
+transition: 0.25s;
+}
+
+input::placeholder {
+color: #8e7779;
+}
+
+input:focus {
+border-color: #a34e49;
+box-shadow: 0 0 0 3px rgba(163, 78, 73, 0.13);
+}
+
+/* ===== BUTTONS ===== */
+button {
+padding: 12px 19px;
+margin: 5px;
+background: linear-gradient(135deg, #a34e49, #bd6657);
+color: #fff8f0;
+border: none;
+border-radius: 9px;
+cursor: pointer;
+font-size: 14px;
+font-weight: 600;
+box-shadow: 0 4px 10px rgba(128, 61, 63, 0.15);
+transition: all 0.25s ease;
+}
+
+button:hover {
+background: linear-gradient(135deg, #843d47, #a34e49);
+transform: translateY(-2px);
+box-shadow: 0 7px 15px rgba(128, 61, 63, 0.22);
+}
+
+/* ===== LOGOUT AND DELETE ===== */
+.logout,
+.delete {
+background: linear-gradient(135deg, #713b50, #8d4960);
+}
+
+.logout:hover,
+.delete:hover {
+background: linear-gradient(135deg, #572b3d, #713b50);
+}
+
+/* ===== PRODUCT TABLE ===== */
+table {
+width: 100%;
+margin-top: 25px;
+background: #ead9cc;
+color: #3d2c35;
+border-collapse: collapse;
+border-radius: 12px;
+overflow: hidden;
+}
+
+th,
+td {
+padding: 15px;
+border-bottom: 1px solid #d8bfb0;
+text-align: left;
+}
+
+th {
+background: linear-gradient(135deg, #713b50, #8d4960);
+color: #fff3e8;
+font-weight: 600;
+}
+
+tr:nth-child(even) {
+background: #f0dfd2;
+}
+
+tr:hover {
+background: #e5cabb;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+.container {
+width: 95%;
+padding: 16px;
+}
+
+
+.login {
+    margin: 55px auto;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+button {
+    padding: 10px 13px;
+}
+
+
+}
